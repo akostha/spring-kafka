@@ -1,0 +1,9 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /kafka
+  
+spring:
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
