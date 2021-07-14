@@ -43,7 +43,12 @@ public class KafkaConfig {
 
 	@Bean
 	public NewTopic chatMessage() {
-		return new NewTopic("chat-message", 1, (short) 1);
+		return new NewTopic("chat-message", 3, (short) 1);
+	}
+	
+	@Bean
+	public NewTopic userChats() {
+		return new NewTopic("user-chat", 1, (short) 1);
 	}
 	
 	@Bean
